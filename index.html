@@ -125,10 +125,12 @@
 			  	</button>
 			</div>
 		</div>
-		<br>
+		<hr>
+		<h3 class="text-center">¡Bienvenido al Instituto Tecnológico de Informática!</h3>
+		<hr>
 		<div class="row row-cols-1 row-cols-md-2 g-4">
 			<div class="col">
-				<div class="card h-100 text-center bg-primary">
+				<div class="card h-100 text-center bg-primary btn-option" data-bs-toggle="modal" data-bs-target="#exampleModal">
   					<img src="src/botonHorario.png" class="card-img-top mx-auto" alt="Horarios">
   					<div class="card-body">
     					<h5 class="card-title text-light">Horarios</h5>
@@ -136,7 +138,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="card h-100 text-center bg-success">
+				<div class="card h-100 text-center bg-success btn-option">
   					<img src="src/botonNovedades.png" class="card-img-top mx-auto" alt="Novedades">
   					<div class="card-body">
     					<h5 class="card-title text-light">Novedades</h5>
@@ -144,7 +146,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="card h-100 text-center bg-warning">
+				<div class="card h-100 text-center bg-warning btn-option">
   					<img src="src/botonInscripcion.png" class="card-img-top mx-auto" alt="Inscripciones">
   					<div class="card-body">
     					<h5 class="card-title text-light">Inscripciones</h5>
@@ -152,7 +154,7 @@
 				</div>
 			</div>
 			<div class="col">
-				<div class="card h-100 text-center bg-danger">
+				<div class="card h-100 text-center bg-danger btn-option">
   					<img src="src/botonExamenes.png" class="card-img-top mx-auto" alt="Examenes">
   					<div class="card-body">
     					<h5 class="card-title text-light">Calendario de exámenes</h5>
@@ -187,7 +189,7 @@
 			©2022 Instituto Tecnológico de Informática
 		</div>
 		<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-			Durazno 1328 entre Ejido y Aquiles R. Lanza
+			<span data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">Durazno 1328 entre Ejido y Aquiles R. Lanza</span>
 		</div>
 		<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
 			Montevideo, Uruguay
@@ -200,42 +202,57 @@
 		</div>
 	  </footer>
 
-	<!--<footer class="bg-dark text-light">
-		<div class="row">
-			<div class="col-sm-4 d-flex flex-column align-items-start">
-				
-			</div>
-		
-			<div class="col-sm-4 d-flex flex-column align-items-center">
-				<a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-					<img src="src/logo.png" width="30px" height="24px">
-				</a>
-				<p>©2022 Instituto Tecnológico de Informática</p>
-				<p>Durazno 1328 entre Ejido y Aquiles R. Lanza</p>
-				<p>Montevideo, Uruguay</p>
-				<address>
-					<p>Teléfono: 29012257 - Fax: 29027144 Interno 13</p>
-				</address>
-				<p>Diseño de los alumnos: Santiago Martinez y Ezequiel Soares de Lima del grupo 2°BO</p>
-			</div>
-		
+	<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+	  <div class="modal-content">
+		<div class="modal-header">
+		  <button type="button" id="btn-matutino" class="btn btn-primary" onclick="horarioMatutino()">Matutino</button>
+		  <button type="button" id="btn-vespertino" class="btn btn-secondary mx-2" onclick="horarioVespertino()">Vespertino</button>
+		  <button type="button" id="btn-nocturno" class="btn btn-secondary" onclick="horarioNocturno()">Nocturno</button>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
-	</footer>-->
+		<div id="modalBody" class="modal-body">
+			<div class="container-fluid">
+				<div id="carouselMatutino" class="carousel slide carousel-fade">
+					<div class="carousel-inner">
+						  <div class="carousel-item active bg-body">
+							<img src="src/MatutinoLunes.png" class="d-block w-100" alt="Lunes">
+						  </div>
+						<div class="carousel-item bg-body">
+							<img src="src/MatutinoMartes.png" class="d-block w-100" alt="Martes">
+						</div>
+						<div class="carousel-item bg-body">
+							<img src="src/MatutinoMiercoles.png" class="d-block w-100" alt="Miercoles">
+						</div>
+						  <div class="carousel-item bg-body">
+							<img src="src/MatutinoJueves.png" class="d-block w-100" alt="Jueves">
+						  </div>
+						  <div class="carousel-item bg-body">
+							<img src="src/MatutinoViernes.png" class="d-block w-100" alt="Viernes">
+						  </div>
+						<div class="carousel-item bg-body">
+							<img src="src/MatutinoSabado.png" class="d-block w-100" alt="Sabado">
+						  </div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselMatutino" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#carouselMatutino" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+				</div>
+			</div>
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 
-	<!--<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-		<div class="col-md-4 d-flex align-items-center">
-			<a href="#" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-			  <img src="src/logo.png" width="30px" height="24px">
-			</a>
-			<span class="mb-3 mb-md-0 text-muted">©2022 Instituto Tecnológico de Informática
-			Durazno 1328 entre Ejido y Aquiles R. Lanza
-			Montevideo, Uruguay
-			Teléfono: 29012257 - Fax: 29027144 Interno 13
-			Diseño de los alumnos: Santiago Martinez y Ezequiel Soares de Lima del grupo 2°BO</span>
-		  </div>
-	</footer>-->
-	<!--Pie de pagina-->
-	<!--<footer class="bd-footer py-4 py-md-5 mt-5 bg-dark"></footer>-->
-
+  <script src="script.js"></script>
 </body>
 </html>
