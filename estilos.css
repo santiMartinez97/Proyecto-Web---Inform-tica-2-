@@ -1,0 +1,30 @@
+body {
+  background-color: #34b7eb !important;
+}
+
+.contenido {
+  margin: 61px 10% 0px;
+  background-color: #fff;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background: rgba(0, 0, 0, 0.10);
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.carousel-item img{
+  width: 80%;
+  max-height: 450px;
+}
+
+.card {
+  margin: 0px 20%;
+}
+
+.card-img-top{
+  max-width: 30%;
+  max-height: 5rem;
+  border-radius: 50% !important;
+}
