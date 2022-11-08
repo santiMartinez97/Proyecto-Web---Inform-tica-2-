@@ -15,8 +15,7 @@ body {
 }
 
 .carousel-item img{
-  width: 80%;
-  max-height: 450px;
+  height: 400px;
 }
 
 .card {
@@ -40,6 +39,5 @@ body {
 }
 
 .modal-body .container-fluid .carousel .carousel-inner .carousel-item img {
-  width: 100% !important;
-  max-height: 300px;
+  height: 300px;
 }

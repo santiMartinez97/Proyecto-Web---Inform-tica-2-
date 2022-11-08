@@ -1,258 +1,413 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Instituto Tecnológico de Informática</title>
-    <link rel="stylesheet" href="estilos.css">
-	<link rel="shortcut icon" href="src/logo.png">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</head>
-<body>
-	<nav class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark opacity-75 fw-semibold">
-		<div class="container-fluid">
-		  <a class="navbar-brand" href="#"><img src="src/logo.png" class="rounded-circle bg-light" alt="Logo" width="40" height="34"></a>
-		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-			<ul class="navbar-nav">
-			  <li class="nav-item px-5">
-				<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-			  </li>
-			  <li class="nav-item dropdown px-5">
-				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  Estudiantes
-				</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="#programa">Programas</a></li>
-				  <li><a class="dropdown-item" href="#">Horarios</a></li>
-				  <li><a class="dropdown-item" href="#">Exámenes</a></li>
-				  <li><a class="dropdown-item" href="#">Avisos de inasistencias</a></li>
-				</ul>
-			  </li>
-			  <li class="nav-item dropdown px-5">
-				<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-				  Docentes
-				</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="#">Reuniones</a></li>
-				  <li><a class="dropdown-item" href="#">Avisos</a></li>
-				</ul>
-			  </li>
-			  <li class="nav-item px-5">
-				<a class="nav-link" href="#">Biblioteca</a>
-			  </li>
-			  <li class="nav-item px-5">
-				<a class="nav-link" href="#">Novedades</a>
-			  </li>
-			  <li class="nav-item px-5">
-				<a class="nav-link" href="#">Contacto</a>
-			  </li>
-			</ul>
-		  </div>
-		</div>
-	  </nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Instituto Tecnológico de Informática</title>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="shortcut icon" href="src/logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-xl fixed-top navbar-dark bg-dark opacity-75 fw-semibold"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="src/logo.png"
+            class="rounded-circle bg-light"
+            alt="Logo"
+            width="40"
+            height="34"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item px-5">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown px-5">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Estudiantes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Programas</a></li>
+                <li><a class="dropdown-item" href="#">Horarios</a></li>
+                <li><a class="dropdown-item" href="#">Exámenes</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Avisos de inasistencias</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-5">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Docentes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Reuniones</a></li>
+                <li><a class="dropdown-item" href="#">Avisos</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="#">Biblioteca</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="#">Novedades</a>
+            </li>
+            <li class="nav-item px-5">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-	<div class="contenido shadow-lg">
-		<div class="container-fluid">
-			<div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-				<div class="carousel-inner">
-		  			<div class="carousel-item active bg-body">
-						<img src="src/Edificio.jpg" class="d-block w-100" alt="Edificio">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Insituto Tecnológico de Informática</h5>
-						</div>
-			  		</div>
-					<div class="carousel-item bg-body">
-						<img src="src/Entrada.jpg" class="d-block w-100" alt="Entrada">
-					</div>
-					<div class="carousel-item bg-body">
-						<img src="src/Pasillo.jpg" class="d-block w-100" alt="Pasillo">
-					</div>
-		  			<div class="carousel-item bg-body">
-						<img src="src/Biblioteca.jpg" class="d-block w-100" alt="Biblioteca">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Biblioteca</h5>
-						</div>
-			  		</div>
-			  		<div class="carousel-item bg-body">
-						<img src="src/Servidor.jpg" class="d-block w-100" alt="Servidor">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Servidor</h5>
-						</div>
-			  		</div>
-					<div class="carousel-item bg-body">
-						<img src="src/Recreativo.jpg" class="d-block w-100" alt="Espacio recreativo">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Espacio recreativo</h5>
-						</div>
-			  		</div>
-					<div class="carousel-item bg-body">
-						<img src="src/Laboratorio.jpg" class="d-block w-100" alt="Laboratorio">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Laboratorio</h5>
-						</div>
-			  		</div>
-					  <div class="carousel-item bg-body">
-						<img src="src/Laboratorio2.jpg" class="d-block w-100" alt="Laboratorio">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Laboratorio</h5>
-						</div>
-			  		</div>
-					  <div class="carousel-item bg-body">
-						<img src="src/Laboratorio3.jpg" class="d-block w-100" alt="Laboratorio">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Laboratorio</h5>
-						</div>
-			  		</div>
-					<div class="carousel-item bg-body">
-						<img src="src/Salon.jpg" class="d-block w-100" alt="Salones">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Salones</h5>
-						</div>
-			  		</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-			  	</button>
-			  	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-			  	</button>
-			</div>
-		</div>
-		<hr>
-		<h3 class="text-center">¡Bienvenido al Instituto Tecnológico de Informática!</h3>
-		<hr>
-		<div class="row row-cols-1 row-cols-md-2 g-4">
-			<div class="col">
-				<div class="card h-100 text-center bg-primary btn-option" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  					<img src="src/botonHorario.png" class="card-img-top mx-auto" alt="Horarios">
-  					<div class="card-body">
-    					<h5 class="card-title text-light">Horarios</h5>
- 					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 text-center bg-success btn-option">
-  					<img src="src/botonNovedades.png" class="card-img-top mx-auto" alt="Novedades">
-  					<div class="card-body">
-    					<h5 class="card-title text-light">Novedades</h5>
- 					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 text-center bg-warning btn-option">
-  					<img src="src/botonInscripcion.png" class="card-img-top mx-auto" alt="Inscripciones">
-  					<div class="card-body">
-    					<h5 class="card-title text-light">Inscripciones</h5>
- 					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="card h-100 text-center bg-danger btn-option">
-  					<img src="src/botonExamenes.png" class="card-img-top mx-auto" alt="Examenes">
-  					<div class="card-body">
-    					<h5 class="card-title text-light">Calendario de exámenes</h5>
- 					</div>
-				</div>
-			</div>
-		</div>
-		<br>
+    <div class="contenido shadow-lg">
+      <div class="container-fluid">
+        <div
+          id="carouselControls"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active bg-body">
+              <img
+                src="src/Edificio.jpg"
+                class="d-block w-100"
+                alt="Edificio"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Insituto Tecnológico de Informática</h5>
+              </div>
+            </div>
+            <div class="carousel-item bg-body">
+              <img src="src/Entrada.jpg" class="d-block w-100" alt="Entrada" />
+            </div>
+            <div class="carousel-item bg-body">
+              <img src="src/Pasillo.jpg" class="d-block w-100" alt="Pasillo" />
+            </div>
+            <div class="carousel-item bg-body">
+              <img
+                src="src/Biblioteca.jpg"
+                class="d-block w-100"
+                alt="Biblioteca"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Biblioteca</h5>
+              </div>
+            </div>
+            <div class="carousel-item bg-body">
+              <img
+                src="src/Laboratorio.jpg"
+                class="d-block w-100"
+                alt="Laboratorio"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Laboratorio</h5>
+              </div>
+            </div>
+            <div class="carousel-item bg-body">
+              <img
+                src="src/Laboratorio2.jpg"
+                class="d-block w-100"
+                alt="Laboratorio"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Laboratorios</h5>
+              </div>
+            </div>
+            <div class="carousel-item bg-body">
+              <img
+                src="src/Laboratorio3.jpg"
+                class="d-block w-100"
+                alt="Laboratorio"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Laboratorios</h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <hr />
+      <div class="text-center">
+        <h2>¡Bienvenido al Instituto Tecnológico de Informática!</h2>
+        <h4>Aquí podrás estudiar:</h4>
+        <h5>
+          Bachillerato Informática, Tecnicatura en Redes y Software, IT y Redes
+        </h5>
+      </div>
+      <hr />
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div
+            class="card h-100 text-center bg-primary btn-option"
+            data-bs-toggle="modal"
+            data-bs-target="#Modal"
+          >
+            <img
+              src="src/botonHorario.png"
+              class="card-img-top mx-auto"
+              alt="Horarios"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Horarios</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center bg-success btn-option">
+            <img
+              src="src/botonNovedades.png"
+              class="card-img-top mx-auto"
+              alt="Novedades"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Novedades</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center bg-warning btn-option">
+            <img
+              src="src/botonInscripcion.png"
+              class="card-img-top mx-auto"
+              alt="Inscripciones"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Inscripciones</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center bg-danger btn-option">
+            <img
+              src="src/botonExamenes.png"
+              class="card-img-top mx-auto"
+              alt="Examenes"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-light">Calendario de exámenes</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
 
-		<!--<div class="container-fluid">
-			<h1 class="display-4" id="programa">Programa</h1>
-			<img src="src/Programa.jpg" style="width:100%">
-			<img src="src/Programa2.jpg" style="width:100%">
-		</div>-->
-	</div>
+    <footer class="text-center text-white" style="background-color: #45637d">
+      <!-- Logo -->
+      <div class="container p-4">
+        <section class="">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6">
+              <div class="img-responsive">
+                <img src="src/logo.png" width="100" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Logo -->
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+        ©2022 Instituto Tecnológico de Informática
+      </div>
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+        Durazno 1328 entre Ejido y Aquiles R. Lanza
+      </div>
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+        Montevideo, Uruguay
+      </div>
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+        Teléfono: 29012257 - Fax: 29027144 Interno 13
+      </div>
+      <div class="text-center" style="background-color: rgba(0, 0, 0, 0.2)">
+        Diseño de los alumnos: Santiago Martinez y Ezequiel Soares de Lima del
+        grupo 2°BO
+      </div>
+    </footer>
 
-	<footer class="text-center text-white" style="background-color: #45637d;">
-		<!-- Logo -->
-		<div class="container p-4">
-		  <section class="">
-			<div class="row d-flex justify-content-center">
-			  <div class="col-lg-6">
-				<div class="img-responsive">
-				  <img src="src/logo.png" width="100">
-				</div>
-			  </div>
-			</div>
-		  </section>
-		</div>
-		<!-- Logo -->
-		<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-			©2022 Instituto Tecnológico de Informática
-		</div>
-		<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-			<span data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">Durazno 1328 entre Ejido y Aquiles R. Lanza</span>
-		</div>
-		<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-			Montevideo, Uruguay
-		</div>
-		<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-			Teléfono: 29012257 - Fax: 29027144 Interno 13
-		</div>
-		<div class="text-center" style="background-color: rgba(0, 0, 0, 0.2);">
-			Diseño de los alumnos: Santiago Martinez y Ezequiel Soares de Lima del grupo 2°BO
-		</div>
-	  </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="Modal"
+      tabindex="-1"
+      aria-labelledby="ModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              id="btn-matutino"
+              class="btn btn-primary"
+              onclick="horarioMatutino()"
+            >
+              Matutino
+            </button>
+            <button
+              type="button"
+              id="btn-vespertino"
+              class="btn btn-secondary mx-2"
+              onclick="horarioVespertino()"
+            >
+              Vespertino
+            </button>
+            <button
+              type="button"
+              id="btn-nocturno"
+              class="btn btn-secondary"
+              onclick="horarioNocturno()"
+            >
+              Nocturno
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div id="modalBody" class="modal-body">
+            <div class="container-fluid">
+              <div id="carouselMatutino" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                  <div class="carousel-item active bg-body">
+                    <img
+                      src="src/MatutinoLunes.png"
+                      class="d-block w-100"
+                      alt="Lunes"
+                    />
+                  </div>
+                  <div class="carousel-item bg-body">
+                    <img
+                      src="src/MatutinoMartes.png"
+                      class="d-block w-100"
+                      alt="Martes"
+                    />
+                  </div>
+                  <div class="carousel-item bg-body">
+                    <img
+                      src="src/MatutinoMiercoles.png"
+                      class="d-block w-100"
+                      alt="Miercoles"
+                    />
+                  </div>
+                  <div class="carousel-item bg-body">
+                    <img
+                      src="src/MatutinoJueves.png"
+                      class="d-block w-100"
+                      alt="Jueves"
+                    />
+                  </div>
+                  <div class="carousel-item bg-body">
+                    <img
+                      src="src/MatutinoViernes.png"
+                      class="d-block w-100"
+                      alt="Viernes"
+                    />
+                  </div>
+                  <div class="carousel-item bg-body">
+                    <img
+                      src="src/MatutinoSabado.png"
+                      class="d-block w-100"
+                      alt="Sabado"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselMatutino"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselMatutino"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-lg">
-	  <div class="modal-content">
-		<div class="modal-header">
-		  <button type="button" id="btn-matutino" class="btn btn-primary" onclick="horarioMatutino()">Matutino</button>
-		  <button type="button" id="btn-vespertino" class="btn btn-secondary mx-2" onclick="horarioVespertino()">Vespertino</button>
-		  <button type="button" id="btn-nocturno" class="btn btn-secondary" onclick="horarioNocturno()">Nocturno</button>
-		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		<div id="modalBody" class="modal-body">
-			<div class="container-fluid">
-				<div id="carouselMatutino" class="carousel slide carousel-fade">
-					<div class="carousel-inner">
-						  <div class="carousel-item active bg-body">
-							<img src="src/MatutinoLunes.png" class="d-block w-100" alt="Lunes">
-						  </div>
-						<div class="carousel-item bg-body">
-							<img src="src/MatutinoMartes.png" class="d-block w-100" alt="Martes">
-						</div>
-						<div class="carousel-item bg-body">
-							<img src="src/MatutinoMiercoles.png" class="d-block w-100" alt="Miercoles">
-						</div>
-						  <div class="carousel-item bg-body">
-							<img src="src/MatutinoJueves.png" class="d-block w-100" alt="Jueves">
-						  </div>
-						  <div class="carousel-item bg-body">
-							<img src="src/MatutinoViernes.png" class="d-block w-100" alt="Viernes">
-						  </div>
-						<div class="carousel-item bg-body">
-							<img src="src/MatutinoSabado.png" class="d-block w-100" alt="Sabado">
-						  </div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselMatutino" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#carouselMatutino" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					  </button>
-				</div>
-			</div>
-		</div>
-		<div class="modal-footer">
-		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-		</div>
-	  </div>
-	</div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
