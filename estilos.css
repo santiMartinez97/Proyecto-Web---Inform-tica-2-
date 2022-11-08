@@ -1,5 +1,5 @@
 body {
-  background-color: #34b7eb !important;
+  background-color: #d1e3eb !important;
 }
 
 .contenido {
@@ -33,9 +33,13 @@ body {
 }
 
 .card-img-top{
-  max-width: 30%;
+  max-width: 40%;
   max-height: 5rem;
   border-radius: 50% !important;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 20px;
+  
 }
 
 .modal-body .container-fluid .carousel .carousel-inner .carousel-item img {
